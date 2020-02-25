@@ -1,0 +1,52 @@
+{
+	"name": "carbon-now-telegram",
+	"version": "0.0.1",
+	"description": "Beautiful images of your code in Telegram.",
+	"license": "MIT",
+	"engines": {
+		"node": ">=8.3"
+	},
+	"scripts": {
+		"start": "node start.js",
+		"test": "xo && ava --serial",
+		"ava": "ava --serial"
+	},
+	"dependencies": {
+		"chalk": "^2.4.1",
+		"clipboardy": "^1.2.3",
+		"codemirror": "^5.49.0",
+		"del": "^3.0.0",
+		"dotenv": "^8.2.0",
+		"fastify": "^2.9.0",
+		"fastify-static": "^2.5.0",
+		"file-exists": "^5.0.1",
+		"file-extension": "^4.0.5",
+		"get-stdin": "^6.0.0",
+		"globby": "^8.0.1",
+		"inquirer": "^6.2.1",
+		"jimp": "^0.8.4",
+		"jsonfile": "^5.0.0",
+		"highlight.js": "^9.15.10",
+		"listr": "^0.14.3",
+		"lodash": "^4.17.11",
+		"meow": "^5.0.0",
+		"nanoid": "^2.0.0",
+		"opn": "^5.4.0",
+		"puppeteer": "^1.11.0",
+		"query-string": "^6.2.0",
+		"regenerator-runtime": "^0.13.3",
+		"serve-static": "^1.14.1",
+		"socks5-https-client": "^1.2.1",
+		"telegraf": "^3.32.0",
+		"tempy": "^0.2.1",
+		"terminal-image": "^0.1.2",
+		"node-telegram-bot-api": "^0.30.0"
+	},
+	"devDependencies": {
+		"ava": "^0.25.0",
+		"child-process-promise": "^2.2.1",
+		"execa": "^1.0.0",
+		"husky": "^1.0.0-rc.14",
+		"xo": "^0.21.1"
+	}
+}

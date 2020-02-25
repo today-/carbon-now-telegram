@@ -1,0 +1,202 @@
+/* cyrillic-ext */
+@font-face {
+	font-family: 'Fira Code';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/firacode/v5/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJV37Nv7g.woff2) format('woff2');
+	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+	font-family: 'Fira Code';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/firacode/v5/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJVT7Nv7g.woff2) format('woff2');
+	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+	font-family: 'Fira Code';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/firacode/v5/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJVz7Nv7g.woff2) format('woff2');
+	unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+	font-family: 'Fira Code';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/firacode/v5/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJVP7Nv7g.woff2) format('woff2');
+	unicode-range: U+0370-03FF;
+}
+/* latin-ext */
+@font-face {
+	font-family: 'Fira Code';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/firacode/v5/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJV77Nv7g.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+	font-family: 'Fira Code';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/firacode/v5/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJVD7Ng.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+#code {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	word-wrap: break-word;
+	word-break: normal;
+	background-color: #263238;
+	color: rgba(233, 237, 237, 1);
+	font-family: Fira Code !important;
+	display: table;
+	text-rendering: optimizeLegibility;
+}
+
+.CodeMirror {
+	background-color: #263238;
+	color: rgba(233, 237, 237, 1);
+	font-family: "Fira Code", monospace !important;
+	font-feature-settings: "calt";
+	font-size: 18px;
+	font-style: normal;
+	font-variant-ligatures: contextual;
+	font-weight: 400 !important;
+	-webkit-text-stroke: 0.15px !important;
+	-webkit-font-smoothing: antialiased;
+	line-height: 152%;
+	padding: 18px 18px 18px 12px;
+}
+
+.CodeMirror-gutters {
+	background: #263238;
+	color: rgb(83, 127, 126);
+	border: none;
+}
+
+.CodeMirror-guttermarker, .CodeMirror-guttermarker-subtle, .CodeMirror-linenumber {
+	color: rgb(83, 127, 126);
+}
+
+.CodeMirror-cursor {
+	border-left: 1px solid #f8f8f0;
+}
+
+div.CodeMirror-selected {
+	background: rgba(255, 255, 255, 0.15);
+}
+
+.CodeMirror-focused div.CodeMirror-selected {
+	background: rgba(255, 255, 255, 0.10);
+}
+
+.CodeMirror-line::selection, .CodeMirror-line > span::selection, .CodeMirror-line > span > span::selection {
+	background: rgba(255, 255, 255, 0.10);
+}
+
+.CodeMirror-line::-moz-selection, .CodeMirror-line > span::-moz-selection, .CodeMirror-line > span > span::-moz-selection {
+	background: rgba(255, 255, 255, 0.10);
+}
+
+.CodeMirror-activeline-background {
+	background: rgba(0, 0, 0, 0);
+}
+
+.cm-keyword {
+	color: rgba(199, 146, 234, 1);
+}
+
+.cm-operator {
+	color: rgba(233, 237, 237, 1);
+}
+
+.cm-variable-2 {
+	color: #80CBC4;
+}
+
+.cm-variable-3, .cm-type {
+	color: #82B1FF;
+}
+
+.cm-builtin {
+	color: #DECB6B;
+}
+
+.cm-atom {
+	color: #F77669;
+}
+
+.cm-number {
+	color: #F77669;
+}
+
+.cm-def {
+	color: rgba(233, 237, 237, 1);
+}
+
+.cm-string {
+	color: #C3E88D;
+}
+
+.cm-string-2 {
+	color: #80CBC4;
+}
+
+.cm-comment {
+	color: #546E7A;
+}
+
+.cm-variable {
+	color: #82B1FF;
+}
+
+.cm-tag {
+	color: #80CBC4;
+}
+
+.cm-meta {
+	color: #80CBC4;
+}
+
+.cm-attribute {
+	color: #FFCB6B;
+}
+
+.cm-property {
+	color: #80CBAE;
+}
+
+.cm-qualifier {
+	color: #DECB6B;
+}
+
+.cm-variable-3, .cm-type {
+	color: #DECB6B;
+}
+
+.cm-tag {
+	color: rgba(255, 83, 112, 1);
+}
+
+.cm-error {
+	color: rgba(255, 255, 255, 1.0);
+	background-color: #EC5F67;
+}
+
+.CodeMirror-matchingbracket {
+	text-decoration: underline;
+	color: white !important;
+}
